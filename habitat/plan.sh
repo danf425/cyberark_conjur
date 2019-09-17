@@ -27,11 +27,7 @@ pkg_build_deps=(
 pkg_bin_dirs=(bin)
 
 do_unpack(){
- #   UNPACK_TO=${HAB_CACHE_SRC_PATH}/"${pkg_name}-${pkg_version}"
- #   mkdir "${UNPACK_TO}"
- #   tar xzf "${HAB_CACHE_SRC_PATH}"/"v${pkg_version}".tar.gz --directory "${UNPACK_TO}"
     tar xzf "${HAB_CACHE_SRC_PATH}"/"${pkg_filename}" --directory ${HAB_CACHE_SRC_PATH}  
-    
 }
 
 do_build(){
